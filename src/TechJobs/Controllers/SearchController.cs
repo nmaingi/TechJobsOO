@@ -21,6 +21,7 @@ namespace TechJobs.Controllers
         {
             SearchJobsViewModel jobsViewModel = new SearchJobsViewModel();
             jobsViewModel.Title = "Search";
+            
             return View(jobsViewModel);
         }
 

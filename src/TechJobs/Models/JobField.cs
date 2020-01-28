@@ -20,9 +20,18 @@
 
         // Provide a basic case-insensitive search
         public bool Contains(string testValue)
+
         {
-            return Value.ToLower().Contains(testValue.ToLower());
+            if (testValue == "")
+            {
+                return Value.ToLower().Contains(testValue.ToLower());
+            }
+            else
+            {
+                return true;
+            }
         }
+        
 
         public override string ToString()
         {
